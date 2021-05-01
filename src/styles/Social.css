@@ -1,0 +1,32 @@
+.linkedin{
+    position: relative;
+    transition: all .3s ease-in;
+    
+}
+
+.linkedin:hover{
+    z-index:2;
+    transform: scale(1.5);
+}
+
+.instagram{
+    position: relative;
+    transition: all .3s ease-in;
+    
+}
+
+.instagram:hover{
+    z-index:2;
+    transform: scale(1.5);
+}
+
+.github{
+    position: relative;
+    transition: all .3s ease-in;
+    
+}
+
+.github:hover{
+    z-index:2;
+    transform: scale(1.5);
+}
