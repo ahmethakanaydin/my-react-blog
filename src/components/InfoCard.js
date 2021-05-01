@@ -19,7 +19,7 @@ const InfoCard = () => {
                 kendimi geliştiriyorum ve gelişim hızımı yavaş yavaş artırmaya çalışıyorum.
             </p> <hr></hr>
             <h5>Kullandığım Teknolojiler</h5> <hr></hr>
-            <Col xl={{offset: 3}} className="mb-5">
+            <Col xl={{offset: 3}} xs={12} className="mb-5 d-none d-sm-block">
                 <ListGroup horizontal>
                     <ListGroup.Item><Image src={html} style={{height: 40}} /></ListGroup.Item>
                     <ListGroup.Item><Image src={css} style={{height: 40}} /></ListGroup.Item>
@@ -28,9 +28,19 @@ const InfoCard = () => {
                     <ListGroup.Item><Image src={bootstrap} style={{height: 40}} /></ListGroup.Item>
                     <ListGroup.Item><Image src={python} style={{height: 40}} /></ListGroup.Item>
                     <ListGroup.Item><Image src={git} style={{height: 40}} /></ListGroup.Item>
-                
                 </ListGroup>
-                
+            </Col>
+
+            <Col xl={{offset: 3}} xs={12} className="mb-5">
+                <ListGroup horizontal className="d-block d-sm-none">
+                    <ListGroup.Item className="mb-1"><Image  src={html} style={{height: 40}} /></ListGroup.Item>
+                    <ListGroup.Item className="mb-1"><Image src={css} style={{height: 40}} /></ListGroup.Item>
+                    <ListGroup.Item className="mb-1"><Image src={js} style={{height: 40}} /></ListGroup.Item>
+                    <ListGroup.Item className="mb-1"><Image src={react} style={{height: 40}} /></ListGroup.Item>
+                    <ListGroup.Item className="mb-1"><Image src={bootstrap} style={{height: 40}} /></ListGroup.Item>
+                    <ListGroup.Item className="mb-1"><Image src={python} style={{height: 40}} /></ListGroup.Item>
+                    <ListGroup.Item className="mb-1"><Image src={git} style={{height: 40}} /></ListGroup.Item>
+                </ListGroup>
             </Col>
 
         </Col>
