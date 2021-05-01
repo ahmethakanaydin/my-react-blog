@@ -42,7 +42,7 @@
   
   .home-text{
     color: #fff;
-    font-size: 68px;
+    font-size: calc(2.3em + 1.3vmin);
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -57,12 +57,12 @@
   
   .box .slogan{
     color: #fff;
-    font-size: 24px;
+    font-size: calc(1em + 1vmin);
     text-align: center;
     font-weight: 250;
   }
   
-  .box .slogan::before{
+ /*  .box .slogan::before{
     content: '';
     height: 1px;
     width: 60px;
@@ -82,4 +82,4 @@
     background: #fff;
     top: -5px;
     margin-left: 20px;
-  }
+  } */
