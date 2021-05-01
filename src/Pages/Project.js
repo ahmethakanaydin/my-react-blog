@@ -27,19 +27,18 @@ function Project() {
             <h2 className="text-center mb-4 mt-5">Projelerim</h2> <hr></hr>
 
             <Row>
-                {/*  */}
                 {postData && postData.map((post, index) => (
 
-                    <Col className="col-lg-4" key={index}>
+                    <Col lg={4} key={index}>
 
-                        <Card className="mb-4 shadow-sm" style={{ width: '18rem' }}>
+                        <Card className="mb-4 shadow-sm offset-1" style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                             <Card.Body>
                                 <Card.Title>{post.title}</Card.Title>
                                 <Card.Text>
                                     {post.body}
                                 </Card.Text>
-                                <Link className="btn btn-primary" to={"/post/" + post.slug.current}>Daha Fazla</Link>
+                                <Link className="btn btn-primary" to={"/project/" + post.slug.current}>Github Link</Link>
                             </Card.Body>
                         </Card>
 
