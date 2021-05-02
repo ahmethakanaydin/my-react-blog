@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Card, Container, Col, Row } from 'react-bootstrap'
 /* import { Link } from 'react-router-dom' */
 import sanityClient from '../client'
+import BlockContent from "@sanity/block-content-to-react"
 
 function Project() {
 
@@ -12,14 +13,14 @@ function Project() {
             title,
             slug,
             githubLink,
-            
+            body,
             mainImage{
                 asset->{
                     _id,
                     url
                 },
                 alt
-            }
+            },
         }`).then((data) => setPost(data)).catch(console.error);
     }, []);
 
@@ -33,15 +34,19 @@ function Project() {
 
                     <Col lg={4} key={index}>
 
-                        <Card className="mb-4 shadow-sm offset-1" style={{ width: '20rem', height: '22rem'}}>
+                        <Card className="mb-4 shadow-sm offset-1" style={{ width: '20rem', height: '24rem'}}>
                             <Card.Img variant="top" src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                             <Card.Body>
                                 <Card.Title>{post.title}</Card.Title>
                                 <Card.Text>
-                                    {post.body}
+                                    <BlockContent 
+                                        blocks={post.body} 
+                                        projectId="sviu56a3" 
+                                        dataset="production">
+                                    </BlockContent>
                                 </Card.Text>
                                 {/* <Link className="btn btn-primary" to={"/project/" + post.slug.current}>Github Link</Link> */}
-                                <a href={post.githubLink} className="btn btn-primary" >Github Link</a>
+                                <a href={post.githubLink} className="btn btn-primary" target="_blank" rel="noreferrer" >Github Link</a>
                                 
                             </Card.Body>
                         </Card>
