@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Button } from 'react-bootstrap'
+import { Col } from 'react-bootstrap'
 import '../styles/AboutCard.css'
 import cv from '../cv.pdf'
 
