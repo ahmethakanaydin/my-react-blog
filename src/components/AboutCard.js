@@ -14,7 +14,7 @@ const AboutCard = () => {
                 <p className='mt-4'>
                     Yazılımın yanı sıra müzik ile ilgileniyorum. Belki dinlersiniz diye youtube kanal <a href="https://www.youtube.com/channel/UCozyfcHE4abS06yP2lkvSGA">linkimi </a> bırakıyorum :)
                 </p>
-                <a className='btn btn-outline-primary' href={cv}>CV İndir</a>
+                <a className='btn btn-outline-primary' href={cv} target="_blank" rel="noreferrer">CV İndir</a>
                 <hr></hr>
             </Col>
         
