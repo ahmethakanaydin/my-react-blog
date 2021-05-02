@@ -21,7 +21,7 @@ function NavBar() {
                     <Nav className="ml-auto">
                         <Nav.Link href="/">Ana Sayfa</Nav.Link>
                         <Nav.Link href="/about">Hakkımda</Nav.Link>
-                        <Nav.Link href="/project">Projeler</Nav.Link>
+                        <Nav.Link href="/project">Projelerim</Nav.Link>
                         <Nav.Link href="/contact">İletişim</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
