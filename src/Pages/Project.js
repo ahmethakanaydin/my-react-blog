@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Card, Container, Col, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+/* import { Link } from 'react-router-dom' */
 import sanityClient from '../client'
 
 function Project() {
@@ -11,6 +11,8 @@ function Project() {
         sanityClient.fetch(`*[_type == "post"]{
             title,
             slug,
+            githubLink,
+            
             mainImage{
                 asset->{
                     _id,
@@ -38,7 +40,9 @@ function Project() {
                                 <Card.Text>
                                     {post.body}
                                 </Card.Text>
-                                <Link className="btn btn-primary" to={"/project/" + post.slug.current}>Github Link</Link>
+                                {/* <Link className="btn btn-primary" to={"/project/" + post.slug.current}>Github Link</Link> */}
+                                <a href={post.githubLink} className="btn btn-primary" >Github Link</a>
+                                
                             </Card.Body>
                         </Card>
 
