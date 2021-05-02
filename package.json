@@ -4,6 +4,7 @@
   "homepage": "https://hakanaydin.me/",
   "private": true,
   "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^2.8.0",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
