@@ -33,7 +33,7 @@ function Project() {
 
                     <Col lg={4} key={index}>
 
-                        <Card className="mb-4 shadow-sm offset-1" style={{ width: '18rem' }}>
+                        <Card className="mb-4 shadow-sm offset-1" style={{ width: '20rem', height: '22rem'}}>
                             <Card.Img variant="top" src={post.mainImage.asset.url} alt={post.mainImage.alt} />
                             <Card.Body>
                                 <Card.Title>{post.title}</Card.Title>
