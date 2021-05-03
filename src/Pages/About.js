@@ -1,4 +1,4 @@
-import { React } from 'react'
+import React from 'react'
 import AboutCard from '../components/AboutCard'
 import ImageCard from '../components/ImageCard'
 import InfoCard from '../components/InfoCard'
@@ -8,8 +8,8 @@ const About = () => {
 
     return (
         <div className='container about mt-3'>
-            <AboutCard />
             <ImageCard />
+            <AboutCard />
             <InfoCard/>
         </div>
     )
