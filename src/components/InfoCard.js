@@ -8,16 +8,9 @@ import bootstrap from '../images/icons/bootstrap.png'
 import git from '../images/icons/git.png'
 import python from '../images/icons/python.png'
 
-
 const InfoCard = () => {
     return (
         <Col xs={12}>
-            <h5>Kısa Bilgi</h5> <hr></hr>
-            <p className="mb-5">
-                İçimdeki heyecan taze, enerjim yüksek, sorumluluklarımın bilincinde olup gerektiği gibi yerine getiren, bulunduğu ortama kendinden 
-                bir şeyler katmayı seven, farklı teknolojilere kısa sürede uyum sağlayabilen bir insanım. Gün içerisinde fazlaca zaman ayırıp 
-                kendimi geliştirmeye çalışıyorum. Bu her zaman bana kendimi daha iyi hissettirir.
-            </p> <hr></hr>
             <h5>Kullandığım Teknolojiler</h5> <hr></hr>
             <Col xl={{offset: 3}} xs={12} className="mb-5 d-none d-sm-block">
                 <ListGroup horizontal>
@@ -30,7 +23,6 @@ const InfoCard = () => {
                     <ListGroup.Item><Image src={git} style={{height: 40}} /></ListGroup.Item>
                 </ListGroup>
             </Col>
-
             <Col xl={{offset: 3}} xs={12} className="mb-5">
                 <ListGroup horizontal className="d-block d-sm-none">
                     <ListGroup.Item className="mb-1"><Image  src={html} style={{height: 40}} /></ListGroup.Item>
@@ -42,7 +34,6 @@ const InfoCard = () => {
                     <ListGroup.Item className="mb-1"><Image src={git} style={{height: 40}} /></ListGroup.Item>
                 </ListGroup>
             </Col>
-
         </Col>
     )
 }
