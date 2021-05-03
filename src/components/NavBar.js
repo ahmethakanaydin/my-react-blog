@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar , Nav} from 'react-bootstrap';
 import moon from '../images/moon.png'
 
-function NavBar() {
+const NavBar = () => {
     return (
         <>
             <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
@@ -14,7 +14,7 @@ function NavBar() {
                     height="25"
                     className="d-inline-block align-top"
                 />{' '}
-                Ahmet Aydın
+                Ahmet Hakan Aydın
             </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
@@ -22,7 +22,6 @@ function NavBar() {
                         <Nav.Link href="/">Ana Sayfa</Nav.Link>
                         <Nav.Link href="/about">Hakkımda</Nav.Link>
                         <Nav.Link href="/project">Projelerim</Nav.Link>
-                        <Nav.Link href="/contact">İletişim</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
