@@ -2,3 +2,16 @@
     border: 1px solid #dfdfdf;
     border-radius: 5px;
 }
+
+.about-head{
+    letter-spacing: 3px;
+}
+
+.avatar{
+    height: 250px;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    text-align:center;
+    margin:0 auto;
+}
