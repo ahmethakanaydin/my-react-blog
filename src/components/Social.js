@@ -3,9 +3,10 @@ import github from '../images/github.png'
 import linkedin from '../images/linkedin.png'
 import instagram from '../images/instagram.png'
 import '../styles/Social.css'
+
 const Social = () => {
     return (
-        <div className="social">
+        <div>
             <a className="mr-4" href="https://www.linkedin.com/in/aydin-ahmet" target="_blank" rel="noreferrer">
                 <img className="linkedin" src={linkedin} style={{ height: 35, width: 35 }} alt="linkedin" />
             </a>
@@ -18,7 +19,5 @@ const Social = () => {
         </div>
     )
 }
-
-
 
 export default Social
