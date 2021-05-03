@@ -4,9 +4,6 @@ import Home from './Pages/Home';
 import NavBar from './components/NavBar';
 import About from './Pages/About';
 import Project from './Pages/Project';
-import Contact from './Pages/Contact';
-
-
 
 const App = () => {
   return  (
@@ -16,10 +13,8 @@ const App = () => {
       <Route component={Home} path='/' exact />
       <Route component={About} path='/about' />
       <Route component={Project} path='/project' />
-      <Route component={Contact} path="/contact" />
     </Switch>
     </BrowserRouter>
-    
   );
 }
 
