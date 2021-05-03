@@ -12,7 +12,7 @@ const Home = () => {
                 <Carousel.Item>
                     <div className="carousel-item active mainImage"></div>
                 <MainBox />
-                <Social/>
+                <div className="social"><Social/></div>
                 </Carousel.Item>
             </Carousel>
         </div>
