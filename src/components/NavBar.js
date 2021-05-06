@@ -1,6 +1,7 @@
 import React from 'react'
 import {Navbar , Nav} from 'react-bootstrap';
 import moon from '../images/moon.png'
+import '../styles/Home.css'
 
 const NavBar = () => {
     return (
