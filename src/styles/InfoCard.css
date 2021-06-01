@@ -1,0 +1,9 @@
+.list-group-item {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+.list-group-item img {
+  height: 40px;
+}
