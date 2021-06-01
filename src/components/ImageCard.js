@@ -10,9 +10,9 @@ const ImageCard = () => {
             <Col className="mt-3 mb-5" xs={12} >
                 <Image className="avatar mb-2" src={Avatar} roundedCircle thumbnail />
                 <h5 className="text-center">Ahmet Hakan Aydın</h5>
-                <span className="text-center">
-                    <p>JR. Frontend Developer <br></br><a href="mailto:ahmet@hakanaydin.me">ahmet@hakanaydin.me</a></p>
-                </span>
+                <div>
+                    <p className="text-center">JR. Frontend Developer <br></br><a href="mailto:ahmet@hakanaydin.me">ahmet@hakanaydin.me</a></p>
+                </div>
                 <div className="text-center"><Social /></div>
                 <hr></hr>
             </Col>

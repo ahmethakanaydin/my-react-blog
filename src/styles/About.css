@@ -4,7 +4,11 @@
 }
 
 .about-head{
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+.text-center{
+    text-align: center !important;
 }
 
 .avatar{
